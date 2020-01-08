@@ -5,13 +5,14 @@
  * * passing 2 numbers returns the sum of thsoe 2 numbers
  * * passing invalid input throws the exception
  *
- * @param {int} x
- * @param {int} y
+ * @param {number} x
+ * @param {number} y
  */
 export function add(x, y) {
-	if (typeof x !== int || typeof y !== int)
-		throw Exception("Invalid input. Please pass 2 integers as parameters")
-	return x + y
+	if (typeof x !== 'number' || typeof y !== 'number'){
+    throw "Invalid input. Please pass 2 integers as parameters"}
+    else{
+	return x + y}
 }
 
 /**
@@ -39,7 +40,7 @@ export function greet(name) {
  * @param {int} number
  */
 export function isGreaterThan7(number) {
-	if (typeof number !== int) return undefined
+	if (typeof number !== 'number') return undefined
 
 	return number > 7
 }
@@ -69,11 +70,11 @@ export function getCompany() {
  */
 export function getRange(num1, num2){
   if(num2 < num1) 
-    throw Exception('the 2nd parameter should be greater than the first')
+    throw 'the 2nd parameter should be greater than the first'
 
   let result = []
 
-  for(let i = num1; i<num2, i++){
+  for(let i = num1; i<num2; i++){
     result.push(i)
   }
 
