@@ -25,7 +25,7 @@ export function add(x, y) {
  * @param {string} name
  */
 export function greet(name) {
-	if (typeof name !== String) return null
+	if (typeof name !== 'string') return null
 
 	return `Hello ${name}`
 }
